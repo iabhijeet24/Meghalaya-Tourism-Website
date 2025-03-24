@@ -8,21 +8,43 @@
 </head>
 <body>
 <!-- -------------------------hero section----------------------- -->
- <section class="heroSection">
-<div class="slider-container">
-    <div class="slider">
-        <div class="slide"><img src="pexels-gsn-travel-30030069.jpg" alt="Slide 1"></div>
-        <div class="slide"><img src="pexels-tho-ta-666326467-19171624.jpg" alt="Slide 2"></div>
-        <div class="slide"><img src="pexels-viethoang-13777381.jpg" alt="Slide 3"></div>
-        <div class="slide"><img src="pexels-gsn-travel-30144941.jpg" alt="Slide 4"></div>
-    </div>
-    <button class="prev" onclick="prevSlide()">&#10094;</button>
-    <button class="next" onclick="nextSlide()">&#10095;</button>
-</div>
-</section>
+    <nav class="navbar">
+        <div class="logoDiv">
+            <img src="assets/Logo.png" alt="logo-Image" id="logoImage">
+        </div>
 
-<script src="script.js">
+        <div>
+            <div class="navLink">
+            <a href="#">Home</a>
+            <a href="">About Us</a>
+            <a href="">Packages</a>
+            <a href="">Blog</a>
+            <a href="">Contact Us</a>
+            </div>
+        </div>
 
-</script>
+        <div class="searchDiv">
+            <input type="search" id="searchBox" placeholder="Search">
+            <img src="assets/magnifying-glass-solid.svg" id="searchImg">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="heroSection">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="assets/pexels-itsthenmp-12233685.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/pexels-nazmul-chowdhury-54846-945593.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="assets/pexels-sankha-subhra-bhattacharjee-716722829-18476582.jpg" alt="Slide 4"></div>
+                <div class="slide"><img src="assets/pexels-shobhit-bajpai-3360406-5036291.jpg" alt="Slide 5"></div>
+                <div class="slide"><img src="assets/pexels-shopnil-hasan-naim-500648713-16077212.jpg" alt="Slide 6"></div>
+                <!-- <div class="slide"><img src="assets/pexels-tanmoy-pal-3640736-29106676.jpg" alt="Slide 7"></div> -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
