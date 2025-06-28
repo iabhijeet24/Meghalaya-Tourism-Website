@@ -1,0 +1,17 @@
+.packagesSection{
+    
+    height: 300vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.packagesHeading{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    background-color: blueviolet;
+}
