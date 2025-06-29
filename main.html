@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Incredible State Tourism</title>
+  <title>Tour Meghalaya</title>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/destinations.css">
   <link rel="stylesheet" href="CSS/packages.css">
@@ -14,8 +14,10 @@
 <body>
   <header>
     <nav>
-      <h2>State Tourism</h2>
-      <ul>
+      <div class="logo-div"> <img src="assets/Logo.png" class="logo-image" /></div>
+       
+      <div class="nav-div">
+        <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#destinations">Destinations</a></li>
@@ -23,15 +25,39 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#plan">Plan</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>
+      </ul></div>
+     
     </nav>
   </header>
 
-  <div class="hero">
-    <div class="hero-content">
-      <h1>Explore the</h1>
-      <h2>The Land Of Clouds - Meghalaya</h1>
-      <input type="text" placeholder="Search destinations here...">
+  <div class="slider">
+
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Explore the</h1>
+        <h2>The Land Of Clouds - Meghalaya</h2>
+        <input type="text" placeholder="Search destinations here..." />
+      </div>
+    </div>
+
+    <!-- Slider Images -->
+    <div class="slides">
+      <img src="assets/Slider Images/banner1.jpg" class="slide active" />
+      <img src="assets/Slider Images/banner2.jpg" class="slide" />
+      <img src="assets/Slider Images/Home-Carousel-10.jpg" class="slide" />
+      <img src="assets/Slider Images/Home-Carousel-11.jpg" class="slide" />
+      <img src="assets/Slider Images/Home-Carousel-6.jpg" class="slide" />
+      <img src="assets/Slider Images/Slider_img2.jpg" class="slide" />
+    </div>
+
+    <!-- Dot Indicators -->
+    <div class="dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
   </div>
 
@@ -39,6 +65,15 @@
     <h2>About the State</h2>
     <p>Explore the rich history, vibrant culture, and welcoming people of this scenic Indian state.</p>
   </section>
+
+
+
+
+
+
+
+
+
 
   <section id="destinations">
     <h2>Top Destinations</h2>
@@ -98,7 +133,8 @@
     <p>&copy; 2025 State Tourism. All Rights Reserved.</p>
   </footer>
 
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="JS/slider.js"></script>
 
 </body>
 

@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 function subscribe() {
   const email = document.querySelector('.contact input').value;
   if (email.trim() === "") {
