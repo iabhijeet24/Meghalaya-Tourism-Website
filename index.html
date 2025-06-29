@@ -1,96 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TourMeghalaya.com</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="packages.css">
-    <!-- <link rel="stylesheet" href="packages.css"> -->
-    <!-- <link rel="stylesheet" href="packages.css"> -->
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelX - Explore the World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- -------------------------hero section----------------------- -->
-    <nav class="navbar">
-        <div class="logoDiv">
-            <img src="assets/Logo.png" alt="logo-Image" id="logoImage">
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Let's Explore the World Together!</h1>
+      <input type="text" placeholder="Search destinations...">
+    </div>
+  </section>
 
-        <div>
-            <div class="navLink">
-            <a href="#">Home</a>
-            <a href="">About Us</a>
-            <a href="">Packages</a>
-            <a href="">Blog</a>
-            <a href="">Contact Us</a>
-            </div>
-        </div>
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <div class="text">
+      <h2>Welcome to TravelX</h2>
+      <p>Your gateway to discovering amazing places across the globe. Plan your perfect trip today!</p>
+    </div>
+    <img src="https://via.placeholder.com/400x300" alt="Welcome Image">
+  </section>
 
-        <div class="searchDiv">
-            <input type="search" id="searchBox" placeholder="Search">
-            <img src="assets/magnifying-glass-solid.svg" id="searchImg">
-        </div>
-    </nav>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">✈️ Flights</div>
+      <div class="service">🏨 Hotels</div>
+      <div class="service">🚗 Cars</div>
+      <div class="service">🧳 Tours</div>
+    </div>
+  </section>
 
+  <!-- Destinations Gallery -->
+  <section class="gallery">
+    <h2>Popular Destinations</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/200x150" alt="">
+      <img src="https://via.placeholder.com/200x150" alt="">
+      <img src="https://via.placeholder.com/200x150" alt="">
+      <img src="https://via.placeholder.com/200x150" alt="">
+    </div>
+  </section>
 
-    <section class="heroSection">
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="assets/pexels-itsthenmp-12233685.jpg" alt="Slide 1">
-                    <p class="caption">Serene waterfalls in Meghalaya</p>
-                </div>
-                <div class="slide">
-                    <img src="assets/pexels-nazmul-chowdhury-54846-945593.jpg" alt="Slide 3">
-                    <p class="caption">Serene waterfalls in Meghalaya</p>
-                </div>
-                <div class="slide">
-                    <img src="assets/pexels-sankha-subhra-bhattacharjee-716722829-18476582.jpg" alt="Slide 4">
-                    <p class="caption">Serene waterfalls in Meghalaya</p>
-                </div>
-                <div class="slide">
-                    <img src="assets/pexels-shobhit-bajpai-3360406-5036291.jpg" alt="Slide 5">
-                    <p class="caption">Serene waterfalls in Meghalaya</p>
-                </div>
-                <div class="slide">
-                    <img src="assets/pexels-shopnil-hasan-naim-500648713-16077212.jpg" alt="Slide 6">
-                    <p class="caption">Serene waterfalls in Meghalaya</p>
-                </div>
-            </div>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </section>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <div class="testimonial">
+      <p>"TravelX made planning our vacation easy and stress-free!"</p>
+      <h4>- Sarah J.</h4>
+    </div>
+  </section>
 
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Subscribe to Newsletter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button onclick="subscribe()">Subscribe</button>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TravelX. All rights reserved.</p>
+  </footer>
 
-
-
-
-    <!-- --------------------Tours and Packages section------------------ -->
-     <section class="packagesSection">
-        <div class="packagesHeading">
-            <h2>TOURS PACKAGES & OPERATORS</h2>
-        </div>
-        <div class="secondHeading">
-            <h3>TOUR PACKAGES</h3>
-            <button>Tour Operators</button>
-        </div>
-        <div class="packages">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-        </div>
-     </section>
-
-
-
-
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible State Tourism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #fffefb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #007B5E;
+    }
+
+    .hero {
+      position: relative;
+      height: 90vh;
+      background: url('https://source.unsplash.com/1600x900/?nature,hills') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>State Tourism</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#plan">Plan</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Discover the Untouched Beauty</h1>
+  </div>
+
+  <section id="about">
+    <h2>About the State</h2>
+    <p>Explore the rich history, vibrant culture, and welcoming people of this scenic Indian state.</p>
+  </section>
+
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mountains" alt="Mountains">
+        <div class="card-body">
+          <h3>Hill District</h3>
+          <p>Beautiful green landscapes, cool climate, and serene beauty.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?waterfall" alt="Waterfall">
+        <div class="card-body">
+          <h3>Falls Region</h3>
+          <p>Mesmerizing waterfalls tucked in lush forests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <h2>Experiences</h2>
+    <ul>
+      <li>Adventure Activities</li>
+      <li>Nature Trails</li>
+      <li>Heritage Walks</li>
+      <li>Traditional Cuisine</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Photos and videos of destinations, festivals, and local life.</p>
+  </section>
+
+  <section id="plan">
+    <h2>Plan Your Trip</h2>
+    <p>How to reach, best seasons, travel tips, and guides.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <select>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+      </select><br><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 State Tourism. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Basic placeholder functionality
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us!");
+    });
+  </script>
+</body>
+
+</html>
