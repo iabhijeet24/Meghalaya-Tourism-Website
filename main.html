@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/destinations.css" />
     <link rel="stylesheet" href="CSS/packages.css" />
+    <link rel="stylesheet" href="CSS/adventure.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -83,7 +84,7 @@
 <!-- -------------------------------------TOURS AND PACKAGES SECTION--------------------------------------- -->
 
   <section class="tours-section">
-    <h2>Tour Operators & Packages</h2>
+    <h2>TOURS OPERATORS & PACKAGES</h2>
     <div class="tour-cards">
 
       <div class="tour-card">
@@ -121,20 +122,65 @@
     </div>
   </section>
 
-</body>
-</html>
 
 
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <p>Photos and videos of destinations, festivals, and local life.</p>
-    </section>
 
-    <section id="plan">
-      <h2>Plan Your Trip</h2>
-      <p>How to reach, best seasons, travel tips, and guides.</p>
-    </section>
+
+  <!-- ---------------------------------------------ADVENTURES SECTION--------------------------------------------------- -->
+
+  <section id="adventure" class="adventure-section">
+  <h2>Adventure</h2>
+  <p>Discover thrilling activities like caving, hikes & treks, paddling, and more.</p>
+
+  <div class="cards-container">
+    <div class="adventure-card">
+      <img src="caving.jpg" alt="Caving">
+      <div class="card-content">
+        <h3>Caving</h3>
+        <button class="learn-btn" data-title="Caving" data-desc="Explore Meghalaya's magnificent limestone caves and underground marvels.">Learn More</button>
+      </div>
+    </div>
+
+    <div class="adventure-card">
+      <img src="trekking.jpg" alt="Hikes and Treks">
+      <div class="card-content">
+        <h3>Hikes & Treks</h3>
+        <button class="learn-btn" data-title="Hikes & Treks" data-desc="Experience breathtaking treks through living root bridges and forest trails.">Learn More</button>
+      </div>
+    </div>
+
+    <div class="adventure-card">
+      <img src="paddling.jpg" alt="Paddling">
+      <div class="card-content">
+        <h3>Paddling</h3>
+        <button class="learn-btn" data-title="Paddling" data-desc="Enjoy kayaking and canoeing in Meghalaya's pristine rivers and lakes.">Learn More</button>
+      </div>
+    </div>
+
+    <div class="adventure-card">
+      <img src="more.jpg" alt="More Adventures">
+      <div class="card-content">
+        <h3>More Adventures</h3>
+        <button class="learn-btn" data-title="More Adventures" data-desc="Try ziplining, camping, mountain biking, and waterfall rappelling.">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
     <section id="contact">
       <h2>Contact Us</h2>
@@ -156,5 +202,6 @@
 
     <script src="JS/script.js"></script>
     <script src="JS/slider.js"></script>
+    <script src="JS/adventure.js"></script>
   </body>
 </html>
