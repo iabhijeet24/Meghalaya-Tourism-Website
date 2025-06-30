@@ -1,6 +1,6 @@
 .adventure-section {
   padding: 60px 20px;
-  background: #f0f0f0;
+  background: #fff;
   text-align: center;
 }
 
@@ -23,6 +23,7 @@
 }
 
 .adventure-card {
+  cursor: pointer;
   background: #fff;
   width: 40vw;
   height: auto;
