@@ -12,9 +12,12 @@ nav {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   width: 100vw;
+  height: 5vh;
   overflow: hidden;
   z-index: 10;
   margin: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 
@@ -31,7 +34,7 @@ nav a {
 }
 
 .logo-image {
-  height: 50px;
+  height: 40px;
   margin-left: 50px;
 }
 
@@ -105,7 +108,7 @@ nav a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,17 +116,18 @@ nav a {
   color: white;
   text-align: center;
   z-index: 4;
-  background: rgba(0, 0, 0, 0.3);
+  background: none;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
 .hero-content h2 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  line-height: 0.5;
 }
 
 .hero-content input {
@@ -131,4 +135,47 @@ nav a {
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+  line-height: 0.5;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; 
+  margin: 30px 0px;
+  margin-left: -20px;
+  padding: 0 20px;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 16px 28px;
+  font-size: 18px;
+  border: none;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-container button {
+  padding: 16px 28px;
+  font-size: 18px;
+  border: 2px solid #28a745;
+  background-color: #28a745;
+  color: white;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-container button:hover {
+  background-color: #218838;
+}
+.search-container input:hover {
+    border: 1px solid #28a745;
 }

@@ -1,141 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Meghalaya</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/destinations.css" />
+    <link rel="stylesheet" href="CSS/packages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tour Meghalaya</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/destinations.css">
-  <link rel="stylesheet" href="CSS/packages.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <img src="assets/Logo.png" class="logo-image" />
+        </div>
 
-<body>
-  <header>
-    <nav>
-      <div class="logo-div"> <img src="assets/Logo.png" class="logo-image" /></div>
-       
-      <div class="nav-div">
-        <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#plan">Plan</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul></div>
-     
-    </nav>
-  </header>
+        <div class="nav-div">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#plan">Plan</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <div class="slider">
-
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Explore the</h1>
-        <h2>The Land Of Clouds - Meghalaya</h2>
-        <input type="text" placeholder="Search destinations here..." />
-      </div>
-    </div>
-
-    <!-- Slider Images -->
-    <div class="slides">
-      <img src="assets/Slider Images/banner1.jpg" class="slide active" />
-      <img src="assets/Slider Images/banner2.jpg" class="slide" />
-      <img src="assets/Slider Images/Home-Carousel-10.jpg" class="slide" />
-      <img src="assets/Slider Images/Home-Carousel-11.jpg" class="slide" />
-      <img src="assets/Slider Images/Home-Carousel-6.jpg" class="slide" />
-      <img src="assets/Slider Images/Slider_img2.jpg" class="slide" />
-    </div>
-
-    <!-- Dot Indicators -->
-    <div class="dots">
-      <span class="dot active" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
-  </div>
-
-  <section id="about">
-    <h2>About the State</h2>
-    <p>Explore the rich history, vibrant culture, and welcoming people of this scenic Indian state.</p>
-  </section>
-
-
-
-
-
-
-
-
-
-
-  <section id="destinations">
-    <h2>Top Destinations</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?mountains" alt="Mountains">
-        <div class="card-body">
-          <h3>Hill District</h3>
-          <p>Beautiful green landscapes, cool climate, and serene beauty.</p>
+    <div class="slider">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Explore the</h1>
+          <h2>The Land Of Clouds - Meghalaya</h2>
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="Search for places, destinations, activities and more..."
+            />
+            <button>Search</button>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?waterfall" alt="Waterfall">
-        <div class="card-body">
-          <h3>Falls Region</h3>
-          <p>Mesmerizing waterfalls tucked in lush forests.</p>
-        </div>
+
+      <!-- Slider Images -->
+      <div class="slides">
+        <img src="assets/Slider Images/banner1.jpg" class="slide active" />
+        <img src="assets/Slider Images/banner2.jpg" class="slide" />
+        <img src="assets/Slider Images/Home-Carousel-10.jpg" class="slide" />
+        <img src="assets/Slider Images/Home-Carousel-11.jpg" class="slide" />
+        <img src="assets/Slider Images/Home-Carousel-6.jpg" class="slide" />
+        <img src="assets/Slider Images/Slider_img2.jpg" class="slide" />
+      </div>
+
+      <!-- Dot Indicators -->
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </div>
-  </section>
 
-  <section id="experiences">
-    <h2>Experiences</h2>
-    <ul>
-      <li>Adventure Activities</li>
-      <li>Nature Trails</li>
-      <li>Heritage Walks</li>
-      <li>Traditional Cuisine</li>
-    </ul>
-  </section>
+    <section id="about">
+      <h2>About the State</h2>
+      <p>
+        Explore the rich history, vibrant culture, and welcoming people of this
+        scenic Indian state.
+      </p>
+    </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <p>Photos and videos of destinations, festivals, and local life.</p>
-  </section>
+    <section id="destinations">
+      <h2>Top Destinations</h2>
+      <div class="grid">
+        <div class="card">
+          <img
+            src="https://source.unsplash.com/400x300/?mountains"
+            alt="Mountains"
+          />
+          <div class="card-body">
+            <h3>Hill District</h3>
+            <p>Beautiful green landscapes, cool climate, and serene beauty.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://source.unsplash.com/400x300/?waterfall"
+            alt="Waterfall"
+          />
+          <div class="card-body">
+            <h3>Falls Region</h3>
+            <p>Mesmerizing waterfalls tucked in lush forests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="plan">
-    <h2>Plan Your Trip</h2>
-    <p>How to reach, best seasons, travel tips, and guides.</p>
-  </section>
+    <section id="experiences">
+      <h2>Experiences</h2>
+      <ul>
+        <li>Adventure Activities</li>
+        <li>Nature Trails</li>
+        <li>Heritage Walks</li>
+        <li>Traditional Cuisine</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required><br><br>
-      <input type="email" placeholder="Your Email" required><br><br>
-      <select>
-        <option value="general">General Inquiry</option>
-        <option value="support">Support</option>
-      </select><br><br>
-      <textarea placeholder="Your Message" required></textarea><br><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Photos and videos of destinations, festivals, and local life.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 State Tourism. All Rights Reserved.</p>
-  </footer>
+    <section id="plan">
+      <h2>Plan Your Trip</h2>
+      <p>How to reach, best seasons, travel tips, and guides.</p>
+    </section>
 
-<!-- <script src="script.js"></script> -->
-<script src="JS/slider.js"></script>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required /><br /><br />
+        <input type="email" placeholder="Your Email" required /><br /><br />
+        <select>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support</option></select
+        ><br /><br />
+        <textarea placeholder="Your Message" required></textarea><br /><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-</body>
+    <footer>
+      <p>&copy; 2025 State Tourism. All Rights Reserved.</p>
+    </footer>
 
+    <script src="JS/script.js"></script>
+    <script src="JS/slider.js"></script>
+  </body>
 </html>
