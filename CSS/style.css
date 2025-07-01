@@ -1,7 +1,12 @@
 body {
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -122,13 +127,17 @@ nav a {
 .hero-content h1 {
   font-size: 2.5rem;
   margin: 0;
+  text-shadow: 0 0 6px #fff, 0 0 8px #000000;
+
 }
 
 .hero-content h2 {
   font-size: 3.5rem;
   margin-bottom: 20px;
   line-height: 1.5;
+  text-shadow: 0 0 6px #fff, 0 0 8px #000000;
 }
+
 
 .search-container {
   display: flex;
@@ -171,3 +180,4 @@ nav a {
 .search-container input:hover {
     border: 1px solid #28a745;
 }
+
