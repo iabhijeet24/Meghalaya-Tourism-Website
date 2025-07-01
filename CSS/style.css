@@ -8,7 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0rem;
+  padding: auto;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   width: 100vw;
@@ -133,7 +133,7 @@ nav a {
 .search-container {
   display: flex;
   justify-content: center; 
-  margin: 30px 0px;
+  margin: 30px auto;
   padding: 0 20px;
   max-width: 700px;
   width: 80%;
