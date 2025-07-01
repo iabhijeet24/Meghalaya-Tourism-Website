@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/destinations.css" />
     <link rel="stylesheet" href="CSS/packages.css" />
     <link rel="stylesheet" href="CSS/adventure.css">
+    <link rel="stylesheet" href="CSS/contactsection.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -286,19 +287,36 @@
 
 
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required /><br /><br />
-        <input type="email" placeholder="Your Email" required /><br /><br />
-        <select>
-          <option value="general">General Inquiry</option>
-          <option value="support">Support</option></select
-        ><br /><br />
-        <textarea placeholder="Your Message" required></textarea><br /><br />
-        <button type="submit">Send</button>
-      </form>
-    </section>
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you. Get in touch via the form below or connect with us on social media!</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Reach Us At</h3>
+      <p>Email: <a href="mailto:info@meghalayatourism.in">info@meghalayatourism.in</a></p>
+      <div class="social-icons">
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+  <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+  <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+  <a href="https://youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <footer>
       <p>&copy; 2025 State Tourism. All Rights Reserved.</p>
