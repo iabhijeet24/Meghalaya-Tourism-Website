@@ -12,18 +12,7 @@ function subscribe() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    document.querySelector("form").addEventListener("submit", function(e) {
+    document.querySelector("contact-form").addEventListener("Submit", function(e) {
       e.preventDefault();
       alert("Thank you for contacting us!");
     });
