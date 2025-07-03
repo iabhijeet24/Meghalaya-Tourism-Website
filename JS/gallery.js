@@ -1,10 +1,9 @@
-  window.addEventListener("DOMContentLoaded", () => {
-    const track = document.getElementById("manualsliderTrack");
-    const images = [...track.children];
-
-    
-    images.forEach((img) => {
-      const clone = img.cloneNode(true);
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.slider-track').forEach(track => {
+    const slides = [...track.children];
+    slides.forEach(slide => {
+      const clone = slide.cloneNode(true);
       track.appendChild(clone);
     });
   });
+});
