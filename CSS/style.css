@@ -181,3 +181,120 @@ nav a {
     border: 1px solid #28a745;
 }
 
+
+
+
+/* ---------------------------------------RESPONSIVE DESIGN------------------------------------------- */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-div {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .nav-div ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-div ul li {
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 8vh;
+  }
+}
+
+
+
+
+
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* Hide nav menu on mobile */
+.nav-div {
+  display: flex;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-div {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 8vh; /* adjusted to match nav height */
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 99;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .nav-div ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-div ul li {
+    padding: 10px 0;
+  }
+
+  .nav-div.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 8vh;
+  }
+
+  .logo-image {
+    margin-left: 10px;
+  }
+
+  .nav-div {
+    margin-right: 0;
+  }
+}
+
+
+

@@ -1,21 +1,15 @@
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    if (navLinks.style.display === 'flex') {
+      navLinks.style.display = 'none';
+    } else {
+      navLinks.style.display = 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.alignItems = 'center';
+    }
+  });
 
 
-function subscribe() {
-  const email = document.querySelector('.contact input').value;
-  if (email.trim() === "") {
-    alert("Please enter a valid email.");
-  } else {
-    alert(`Subscribed successfully with: ${email}`);
-  }
-}
-
-
-
-
-    document.querySelector("contact-form").addEventListener("Submit", function(e) {
-      e.preventDefault();
-      alert("Thank you for contacting us!");
-    });
-
-
-
+  

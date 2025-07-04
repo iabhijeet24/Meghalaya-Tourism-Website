@@ -111,3 +111,37 @@
 .place-card:hover .label{
   display: none;
 }
+
+
+
+/* -----------------------------------------RESPONSIVE DESIGN------------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+  .place-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1px;
+  cursor: pointer;
+  width: 384px;
+  height: 252px;
+}
+
+.place-card .label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  padding: 0px 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  z-index: 2;
+  font-size: 3.2rem;
+}
+
+.places-row3{
+  display: none;
+}
+
+}

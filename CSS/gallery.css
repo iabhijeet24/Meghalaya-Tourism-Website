@@ -93,3 +93,9 @@ body {
   margin: 0px auto;
   display: block;
 }
+
+@media (max-width: 768px) {
+  #postcard-image{
+     transform: scale(1.4);
+  }
+}
